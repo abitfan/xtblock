@@ -11,12 +11,12 @@ Clone this repository:
 	git clone https://github.com/abitfan/xtblock 
 ```
 
-Create an ipset bloacklist:
+Create an ipset blacklist:
 ```	
 	ipset create xtblock hash:net
 ```
 
-Add iptables block rule:
+Add iptables drop rule:
 ```
 	ipstables -I INPUT -m set --match-set xtblock src -j DROP
 ```
