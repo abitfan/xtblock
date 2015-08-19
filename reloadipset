@@ -1,0 +1,7 @@
+#!/bin/sh
+
+ipset flush xtblock
+while IFS= read -r ip
+do
+        ipset add xtblock $ip
+done
