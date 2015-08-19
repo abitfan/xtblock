@@ -18,7 +18,7 @@ Create an ipset blacklist:
 
 Add iptables drop rule:
 ```
-	ipstables -I INPUT -m set --match-set xtblock src -j DROP
+	iptables -I INPUT -m set --match-set xtblock src -j DROP
 ```
 
 Fetch list of XT nodes:
